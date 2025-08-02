@@ -1,4 +1,5 @@
-module microservices/auth_service
+module github.com/CatGitBon/auth_service
+
 
 go 1.24.4
 

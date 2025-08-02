@@ -3,8 +3,8 @@ package main
 import (
 	"context"
 	"fmt"
+	authService "github.com/CatGitBon/auth_service/pkg"
 	"log"
-	authService "microservices/auth_service/pkg" // Импортируем сгенерированные файлы
 	"net"
 
 	"google.golang.org/grpc"

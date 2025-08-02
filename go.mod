@@ -1,6 +1,5 @@
 module github.com/CatGitBon/auth_service
 
-
 go 1.24.4
 
 require (

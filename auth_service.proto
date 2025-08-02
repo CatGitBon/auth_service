@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package auth_service;
+
+option go_package = "pkg/;authService";
+
+service AuthService {
+    // Метод аутентификации пользователя
+    rpc Authenticate (AuthRequest) returns (AuthResponse);
+}
+
+// Сообщение запроса для аутентификации
+message AuthRequest {
+    string user_id = 1;
+    string password = 2;
+}
+
+// Ответ на запрос аутентификации
+message AuthResponse {
+    bool success = 1;
+    string message = 2;
+}
